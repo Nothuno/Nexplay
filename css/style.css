@@ -32,21 +32,29 @@ body {
     transition: transform 0.2s ease;
     text-decoration: none;
     color: inherit;
-  }
-  
-  .news-card:hover {
+    overflow: hidden; /* Para garantir que nada saia do card */
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Se quiser bordas arredondadas na imagem também */
+    margin-bottom: 1rem; /* Espaçamento entre a imagem e o título */
+}
+
+.news-card:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  
-  .news-card h2 {
+}
+
+.news-card h2 {
     margin-top: 0;
     color: #3d5afe;
-  }
-  
-  .news-card p {
+}
+
+.news-card p {
     color: #444;
-  }
+}
   
   footer {
     text-align: center;
